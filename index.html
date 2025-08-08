@@ -1,13 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./src/assets/favicon.ico">
-  <script type="module" src="./src/js/main.js"></script>
-  <title>Museum</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/assets/favicon.ico" />
+    <script type="module" src="./src/js/main.js"></script>
+    <title>Museum</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <h1 class="logo">Louvre</h1>
+        <img
+          src="./src/assets/svg/burger-open.svg"
+          alt="menu-open"
+          class="burger-button burger-button--open burger-button--shown"
+        />
+        <img
+          src="./src/assets/svg/burger-close.svg"
+          alt="menu-close"
+          class="burger-button burger-button--close"
+        />
+        <nav class="navigation header__navigation">
+          <ul class="navigation__list">
+            <li>
+              <a href="#" class="navigation__link navigation__link--header"
+                >Visiting</a
+              >
+            </li>
+            <li>
+              <a href="#" class="navigation__link navigation__link--header"
+                >Explore</a
+              >
+            </li>
+            <li>
+              <a href="#" class="navigation__link navigation__link--header"
+                >Video</a
+              >
+            </li>
+            <li>
+              <a href="#" class="navigation__link navigation__link--header"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a href="#" class="navigation__link navigation__link--header"
+                >Tickets</a
+              >
+            </li>
+            <li>
+              <a href="#" class="navigation__link navigation__link--header"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="burger-menu">
+      <nav class="navigation burger-menu__navigation">
+        <ul>
+          <li>
+            <a href="#" class="navigation__link navigation__link--burger"
+              >Visiting</a
+            >
+          </li>
+          <li>
+            <a href="#" class="navigation__link navigation__link--burger"
+              >Explore</a
+            >
+          </li>
+          <li>
+            <a href="#" class="navigation__link navigation__link--burger"
+              >Video</a
+            >
+          </li>
+          <li>
+            <a href="#" class="navigation__link navigation__link--burger"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a href="#" class="navigation__link navigation__link--burger"
+              >Tickets</a
+            >
+          </li>
+          <li>
+            <a href="#" class="navigation__link navigation__link--burger"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu__images-block">
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="./src/assets/img/768-size/burger/image2.jpg"
+          />
+          <source
+            media="(min-width:420px)"
+            srcset="./src/assets/img/420-size/burger/image2.jpg"
+          />
+          <img src="./src/assets/img/420-size/burger/image2.jpg" alt="photo" />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="./src/assets/img/768-size/burger/image1.jpg"
+          />
+          <source
+            media="(min-width:420px)"
+            srcset="./src/assets/img/420-size/burger/image1.jpg"
+          />
+          <img src="./src/assets/img/420-size/burger/image1.jpg" alt="photo" />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="./src/assets/img/768-size/burger/image3.jpg"
+          />
+          <source
+            media="(min-width:420px)"
+            srcset="./src/assets/img/420-size/burger/image3.jpg"
+          />
+          <img src="./src/assets/img/420-size/burger/image3.jpg" alt="photo" />
+        </picture>
+      </div>
+      <ul class="social-media burger-menu__media">
+        <li>
+          <a
+            class="social-media__item social-media__item--yt"
+            href="https://www.youtube.com/user/louvre"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media__item social-media__item--inst"
+            href="https://www.instagram.com/museelouvre/"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media__item social-media__item--fb"
+            href="https://www.facebook.com/museedulouvre"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media__item social-media__item--tw"
+            href="http://twitter.com/museelouvre"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="social-media__item social-media__item--pint"
+            href="https://www.pinterest.fr/museedulouvre/"
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <section class="welcome section section--dark">
+        <div class="container welcome__container">
+          <div class="welcome__text">
+            <h2 class="welcome__title section-title">
+              Welcome <br />
+              to the louvre
+            </h2>
+            <p class="welcome__subtitle">From the castle to the museum</p>
+            <a href="" class="welcome__button">Discover the Louvre</a>
+          </div>
+          <div class="welcome__slider slider">
+            <div class="welcome__slide active">
+              <div class="welcome__shadow"></div>
+              <img
+                class="welcome__image"
+                src="./src/assets/img/welcome-slider/1.jpg"
+                alt="image"
+              />
+            </div>
+            <div class="welcome__slide">
+              <div class="welcome__shadow"></div>
+              <img
+                class="welcome__image"
+                src="./src/assets/img/welcome-slider/2.jpg"
+                alt="image"
+              />
+            </div>
+            <div class="welcome__slide">
+              <div class="welcome__shadow"></div>
+              <img
+                class="welcome__image"
+                src="./src/assets/img/welcome-slider/3.jpg"
+                alt="image"
+              />
+            </div>
+            <div class="welcome__slide">
+              <div class="welcome__shadow"></div>
+              <img
+                class="welcome__image"
+                src="./src/assets/img/welcome-slider/4.jpg"
+                alt="image"
+              />
+            </div>
+            <div class="welcome__slide">
+              <div class="welcome__shadow"></div>
+              <img
+                class="welcome__image"
+                src="./src/assets/img/welcome-slider/5.jpg"
+                alt="image"
+              />
+            </div>
+            <div class="welcome__slider-panel">
+              <p class="welcome__slider-number">01 | 05</p>
+              <div class="welcome__slider-pagination">
+                <button class="welcome__slider-pagination-element active"></button>
+                <button class="welcome__slider-pagination-element"></button>
+                <button class="welcome__slider-pagination-element"></button>
+                <button class="welcome__slider-pagination-element"></button>
+                <button class="welcome__slider-pagination-element"></button>
+              </div>
+              <div class="welcome__slider-arrows">
+                <button class="welcome__slider-arrow welcome__slider-arrow--prev"></button>
+                <button class="welcome__slider-arrow welcome__slider-arrow--next welcome__slider-arrow--right"></button>
+                <!-- <div
+                  id="btn-prev"
+                  class="welcome__slider-arrow welcome__slider-arrow--left"
+                ></div>
+                <div
+                  id="btn-next"
+                  class="welcome__slider-arrow welcome__slider-arrow--rigth"
+                ></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
